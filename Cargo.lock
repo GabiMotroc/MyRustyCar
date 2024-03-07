@@ -749,6 +749,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "levenshtein"
+version = "1.0.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "db13adb97ab515a3691f56e4dbab09283d0b86cb45abd991d8634a9d6f501760"
+
+[[package]]
 name = "libc"
 version = "0.2.153"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -762,6 +768,15 @@ checksum = "bfae20f6b19ad527b550c223fddc3077a547fc70cda94b9b566575423fd303ee"
 dependencies = [
  "serde",
  "serde_test",
+]
+
+[[package]]
+name = "litrs"
+version = "0.4.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b4ce301924b7887e9d637144fdade93f9dfff9b60981d4ac161db09720d39aa5"
+dependencies = [
+ "proc-macro2",
 ]
 
 [[package]]
@@ -821,6 +836,7 @@ version = "0.1.0"
 dependencies = [
  "leptos",
  "leptos_router",
+ "stylers",
 ]
 
 [[package]]
@@ -1334,6 +1350,18 @@ name = "smallvec"
 version = "1.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e6ecd384b10a64542d77071bd64bd7b231f4ed5940fba55e98c3de13824cf3d7"
+
+[[package]]
+name = "stylers"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "03e306edf4b3cb5cff4b2e21b8895ed9e70fbd1bbb3a8dfb7e4cc245a763a955"
+dependencies = [
+ "levenshtein",
+ "litrs",
+ "proc-macro2",
+ "quote",
+]
 
 [[package]]
 name = "syn"

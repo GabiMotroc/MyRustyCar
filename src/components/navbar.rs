@@ -6,7 +6,7 @@ pub fn Navbar() -> impl IntoView {
         <nav class="navbar navbar-collapse bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    Car History
+                    My Rusty Car
                 </a>
                 <div class="collapse navbar-collapse" id="navBar">
                     <ul class="navbar-nav">
